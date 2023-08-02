@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .parent{
+      position: relative;
+      margin: 10% 20%;
+      height: 60vh;
+      background: whitesmoke;
+      box-shadow: 0 4px 4px 0 white;
+    }
+    @media (max-width: 400px) {
+    .main {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+    .parent{
+      background: whitesmoke;
+      box-shadow: 0 4px 4px 0 white;
+      height: auto;
+      width: 100%;
+    }
+    .left-content{
+      width: 100%;
+    }
+  }
+    .para{
+      display: inline-block;
+      /* margin-right: 32%; */
+    }
+    .para img {
+      margin-left: 5px;
+    }
+    .main{
+      display: inline-block;
+    }
+    .left-content{
+      /* position: absolute; */
+      height: 100%;
+      width: 50%;
+      background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+      border-radius: 8px;
+    }
+    .left-content h4{
+      left:50%;
+    }
+    .right-menu{
+      margin-left: 10px;
+      position: absolute;
+      left: 50%;
+      height: 100%;
+      width: 50%;
+    }
+    .total{
+      position: relative;
+      margin-left: 30%;
+      width: 150px;
+      height: 150px;
+      border: 1px solid black;
+      background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
+      border-radius: 50%;
+    }
+    /* .total h1 p{
+    padding-left: 100px;  
+    top: 50%;
+    left: 50%;
+    /* Use negative margins to shift the item back half of its width and height 
+    transform: translate(-50%, -50%); } */
+    .individual_performance{
+      width: 90%;
+      border-radius: 8px;
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+    .continue{
+      background-color: hsl(224, 30%, 27%) ;
+      width: 80%;
+      height:50px;
+      border-radius: 15px;
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+    .continue h3 {
+      padding: 15px;
+      margin-left: 35%;
+      font-size: 20px;
+      font-weight: bold;
+      color: hsl(0, 0%, 100%);
+    }
+    .right-menu h4{
+      color: hsl(224, 30%, 27%) ;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+
+    <div class="main left-content">
+      <h4 style="margin-left: 35%; color: azure;">Your Result</h4>
+
+        <div class="total">
+          <h1 style="color: azure; padding-left:50px ; font-size: 3rem; ">76</h1>
+          <p style="color: azure; padding-left:50px ; ">of 100</p>
+        </div>
+        
+    
+      <h3 style="margin-left: 35%; color: azure;">Great</h3>
+      <p style="margin-left: 25%; color: azure;">You scored higher than 65% <br> of the people who have <br>taken these tests.</p>
+    </div>
+  
+    <div class="main right-menu">
+      <h4>Summary</h4>
+  
+      <div class="individual_performance" style="color:hsl(0, 100%, 67%) ; background: rgb(243, 205, 205);">
+        <p class="para">
+          <img src="./assets/images/icon-reaction.svg" alt=""> Reaction</p> 
+        <p class="para" style="float: right; margin-right: 10px;">80 / 100</p>
+      </div>
+      <div class="individual_performance" style="color:hsl(39, 100%, 56%) ; background: rgb(243, 220, 177);">
+        <p class="para">
+          <img src="./assets/images/icon-memory.svg" alt=""> Memory</p> 
+        <p class="para" style="float: right; margin-right: 10px;">92 / 100</p>
+      </div>
+      <div class="individual_performance" style="color: hsl(166, 100%, 37%); background: rgb(180, 245, 180);">
+        <p class="para">
+          <img src="./assets/images/icon-verbal.svg" alt=""> Verbal</p> 
+        <p class="para" style="float: right; margin-right: 10px;">61 / 100</p>
+      </div>
+      <div class="individual_performance" style="color:hsl(234, 85%, 45%) ; background: rgb(186, 186, 245);" >
+        <p class="para">
+          <img src="./assets/images/icon-visual.svg" alt=""> Visual</p> 
+        <p class="para" style="float: right; margin-right: 10px;">72 / 100</p>
+      </div>
+      <div class="continue">
+        <h3 >continue</h3> 
+      </div>
+
+
+    </div>
+  </div>
+  
+</body>
+</html>
